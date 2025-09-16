@@ -1,0 +1,131 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(179, 24, 24), rgb(41, 40, 40));
+}
+
+body, .navbar {
+    border-radius: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    background-color: #000000;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-size: 1.2em;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #eb1010 ;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: auto;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.navbar-nav :hover{
+    color: #eb1010;
+}
+
+.navbar-nav a {
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal ;
+}
+
+/* banner */
+.banner {
+    max-width: 400px;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(108, 105, 105));
+    font-size: xx-large;
+}
+
+/* item */
+.cars {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 20px;
+    border: 2px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 330px;
+    max-width: 3000px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.item .name {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.item .name h2 {
+    margin-bottom: 2rem;
+}
+
+.item .item .name h2, .item {
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer p {
+    margin: 10px 100px;
+    font-size: small;
+}
